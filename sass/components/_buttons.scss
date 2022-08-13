@@ -1,0 +1,71 @@
+@use '../abstracts/helper'as *;
+
+.btn {
+   font-weight: 600;
+   font-size: $fs-btn;
+   display: inline-block;
+   padding: 1.6rem 3.6rem 1.8rem;
+}
+
+.btn-white {
+   color: $color-Dark-800;
+   background-color: white;
+
+   svg {
+      transform: translateY(0.3rem);
+      transition: transform 0.3s ease-in-out;
+   }
+
+   &:hover {
+      svg {
+         transform: translate(0.6rem, 0.3rem);
+      }
+   }
+}
+
+.btn-dark {
+   margin-top: 5rem;
+   color: $color-light-100;
+   background-color: $color-Dark-800;
+   transition: transform 0.3s ease-in-out;
+
+   &:hover {
+      transform: translateY(0.2rem);
+   }
+}
+
+.btn-blank {
+   color: $color-light-100;
+   background-color: transparent;
+
+   svg {
+      fill: $color-light-100;
+      transform: translateY(0.3rem);
+      transition: transform 0.3s ease-in-out;
+   }
+
+   &:hover {
+      svg {
+         transform: translate(0.6rem, 0.3rem);
+      }
+   }
+}
+
+.btn-darkBlank {
+   font-weight: 600;
+   font-size: $fs-btn;
+   color: $color-Dark-800;
+   background-color: transparent;
+
+   svg {
+      fill: $color-Dark-800;
+      transform: translateY(0.3rem);
+      transition: transform 0.3s ease-in-out;
+   }
+
+   &:hover {
+      svg {
+         transform: translate(0.6rem, 0.3rem);
+      }
+   }
+}

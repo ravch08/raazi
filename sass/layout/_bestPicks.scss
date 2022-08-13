@@ -1,0 +1,80 @@
+@use '../abstracts/helper'as *;
+
+#bestPicks {
+
+   .collections {
+      @extend .flexRow-between;
+   }
+
+   .collection-bags {
+      margin-right: 3rem;
+   }
+
+   .collection-bags,
+   .collection-shirts {
+      line-height: 0;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+
+      img {
+         transform: scale(1.0);
+         transition: transform 0.3s ease-in-out;
+      }
+
+      &:hover {
+         img {
+            transform: scale(1.1);
+         }
+      }
+   }
+
+   .bags-content,
+   .shirts-content {
+      position: absolute;
+   }
+
+   .bags-content {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      h3 {
+         color: white;
+         margin-bottom: 1rem;
+      }
+   }
+
+   .shirts-content {
+      top: 50%;
+      left: 0;
+      transform: translate(30%, -50%);
+
+      .btn-darkblank {
+         color: $color-Dark-800;
+      }
+
+      h3 {
+         margin-bottom: 1rem;
+         color: $color-Dark-800;
+      }
+   }
+}
+
+
+// ----------------------------------- MEDIA QUERIES --------------------------------------
+
+
+@media screen and (max-width: 768px) {
+
+   .collections {
+      gap: 3rem;
+      flex-direction: column;
+   }
+
+   #bestPicks {
+      .collection-bags {
+         margin-right: 0;
+      }
+   }
+}

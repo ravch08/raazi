@@ -1,0 +1,48 @@
+@use '../abstracts/helper'as *;
+
+#blog {
+
+   .swiper-slide {
+      position: relative;
+   }
+}
+
+.blog-content {
+   padding: 2rem 1rem;
+
+   h3 {
+      font-size: $fs-h4;
+   }
+
+   p {
+      line-height: $lh-body;
+      font-size: $fs-topbar;
+   }
+}
+
+#brands {
+   border-top: 0.1rem solid rgba(31, 30, 30, 0.075)
+}
+
+.brands-wrapper {
+   @extend .flexRow-around;
+
+   img {
+      transition: transform 0.3s ease-in-out;
+   }
+
+   a:hover img {
+      transform: translateY(-0.4rem);
+   }
+}
+
+// ----------------------------------- MEDIA QUERIES --------------------------------------
+
+
+@media screen and (max-width: 991px) {
+
+   .brands-wrapper {
+      gap: 3.6rem;
+      flex-wrap: wrap;
+   }
+}

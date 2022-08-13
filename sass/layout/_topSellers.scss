@@ -1,0 +1,123 @@
+@use '../abstracts/helper'as *;
+
+#newArrivals,
+#topSellers {
+
+   .swiper-wrapper {
+      @extend .flexRow-between;
+   }
+
+   .swiper-slide {
+      cursor: pointer;
+
+      figure {
+         overflow: hidden;
+         position: relative;
+      }
+
+      .hide {
+         position: absolute;
+         top: 0;
+         left: 0;
+         transition: visibility 0.1s ease-in-out;
+      }
+
+      h3 {
+         font-size: $fs-h4;
+         margin: 1rem 0;
+      }
+
+      &:hover {
+
+         .bag,
+         .eye,
+         .heart {
+            bottom: 5%;
+         }
+
+         .hide {
+            visibility: hidden;
+         }
+      }
+   }
+
+   .card-content {
+      padding: 1rem 0;
+      @extend .flexColumn-start;
+   }
+
+   .cart-items {
+      @extend .flexRow-between;
+   }
+
+   .bag {
+      left: 25%;
+      transition: fill 0.2s ease-in-out, background-color 0.3s ease-in-out, bottom 0.2s ease-in;
+   }
+
+   .eye {
+      left: 45%;
+      transition: fill 0.2s ease-in-out, background-color 0.3s ease-in-out, bottom 0.3s ease-in;
+   }
+
+   .heart {
+      left: 65%;
+      transition: fill 0.2s ease-in-out, background-color 0.3s ease-in-out, bottom 0.4s ease-in;
+   }
+
+   .bag,
+   .eye,
+   .heart {
+      position: absolute;
+      gap: 1.5rem;
+      bottom: -15%;
+      width: 3.8rem;
+      height: 3.8rem;
+      border-radius: 50%;
+      @extend .flexRow-center;
+      background-color: white;
+
+      &:hover {
+         fill: white;
+         background-color: $color-primary;
+      }
+   }
+
+   .category {
+      font-weight: 600;
+      font-size: $fs-topbar;
+      color: $color-light-800;
+   }
+
+   .card-cross,
+   .card-price,
+   .card-red {
+      font-weight: 600;
+      font-size: $fs-h5;
+   }
+
+   .card-cross {
+      padding-right: 1rem;
+      color: $color-light-800;
+      text-decoration: line-through;
+   }
+
+   .card-red {
+      color: $color-primary;
+   }
+
+   .card-price {
+      color: $color-Dark-400;
+   }
+}
+
+
+// ----------------------------------- MEDIA QUERIES --------------------------------------
+
+
+@media screen and (max-width: 768px) {
+
+   .heading {
+      width: 100%;
+   }
+}

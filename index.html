@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="sass/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/main.min.css">
+
+   <script defer src="js/swiper-bundle.min.js"></script>
+   <script defer src="js/main.js"></script>
+
+   <!-- https://demo4.drfuri.com/razzi/home-10/ -->
+
+   <title>Raazi | Inspired by Nature</title>
+</head>
+
+<body>
+
+   <header>
+      <div class="topbar">
+         <div class="container">
+            <div class="topbar-wrapper">
+               <div class="left-side">
+                  <p>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 640 512">
+                        <path
+                           d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h16c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z" />
+                     </svg>
+                     <span>FREE SHIPPING OVER $100</span>
+                  </p>
+
+                  <div class="currency">
+                     <span>INR</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 320 512">
+                        <path
+                           d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                     </svg>
+
+                     <ul class="currency-dropdown">
+                        <li><a href="#">INR</a></li>
+                        <li><a href="#">USD</a></li>
+                        <li><a href="#">EUR</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="language">
+                     <span>English</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 320 512">
+                        <path
+                           d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                     </svg>
+
+                     <ul class="language-dropdown">
+                        <li><a href="#">Hindi</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">French</a></li>
+                        <li><a href="#">Spanish</a></li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="right-side">
+                  <a href="#" class="topbar-links">Shipping</a>
+                  <a href="#" class="topbar-links">FAQ</a>
+                  <a href="#" class="topbar-links">Contact</a>
+                  <span class="divider">|</span>
+                  <div class="social-icons">
+                     <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 320 512">
+                           <path
+                              d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                        </svg>
+                     </a>
+                     <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 496 512">
+                           <path
+                              d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+                        </svg>
+                     </a>
+                     <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 448 512">
+                           <path
+                              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                     </a>
+                     <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 448 512">
+                           <path
+                              d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="navbar">
+         <div class="container">
+
+            <nav class="navbar-wrapper">
+               <a href="index.html" class="nav-brand">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="84.032" height="23.52" viewBox="0 0 84.032 23.52">
+                     <path
+                        d="M2.336-21.344V0H7.264V-8.416L13.024,0H19.04L12.48-8.736a6.716,6.716,0,0,0,2.976-1.632A5.839,5.839,0,0,0,17.12-14.72a6.435,6.435,0,0,0-1.856-4.768,7.635,7.635,0,0,0-5.44-1.856ZM7.264-17.5H8.416a4.815,4.815,0,0,1,2.72.672,2.59,2.59,0,0,1,.992,2.176,2.873,2.873,0,0,1-.8,2.08,4.053,4.053,0,0,1-2.944.928H7.264ZM31.84-12.672a5.354,5.354,0,0,0-4.48-2.08A6.881,6.881,0,0,0,22.4-12.8a8.127,8.127,0,0,0-2.208,5.76A7.552,7.552,0,0,0,22.272-1.7,6.764,6.764,0,0,0,27.616.48,4.756,4.756,0,0,0,31.84-1.728V0h4.608V-14.272H31.84Zm-3.328,1.888a3.856,3.856,0,0,1,2.56.992,3.619,3.619,0,0,1,1.056,2.624,3.625,3.625,0,0,1-1.12,2.688,3.413,3.413,0,0,1-2.4.992,3.785,3.785,0,0,1-2.72-1.12,3.681,3.681,0,0,1-.96-2.56A3.566,3.566,0,0,1,25.984-9.76,3.633,3.633,0,0,1,28.512-10.784Zm25.312-3.488H39.744v3.84h6.3L38.624,0h14.56V-3.84H46.432Zm15.968,0H55.712v3.84h6.3L54.592,0h14.56V-3.84H62.4Zm2.5,0V0H76.9V-14.272Zm-.384-6.08a2.663,2.663,0,0,0,2.688,2.688,2.663,2.663,0,0,0,2.688-2.688,2.663,2.663,0,0,0-2.688-2.688A2.663,2.663,0,0,0,71.9-20.352ZM80.544-2.9A2.88,2.88,0,0,0,83.456.01,2.88,2.88,0,0,0,86.368-2.9a2.88,2.88,0,0,0-2.912-2.91A2.88,2.88,0,0,0,80.544-2.9Z"
+                        transform="translate(-2.336 23.04)"></path>
+                  </svg>
+               </a>
+
+               <ul class="nav-list">
+                  <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">Products
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 320 512">
+                           <path
+                              d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                        </svg>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Boots</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Bags</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Dresses</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Tunic</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">T-Shirts</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+               </ul>
+
+               <div class="nav-right">
+                  <div class="login">
+
+                     <div class="login-link search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 512 512">
+                           <path
+                              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
+                        </svg>
+
+                        <div class="sidebar-search">
+                           <div class="sidebar-head">
+                              <h2>Sign In</h2>
+                              <a href="javascript:void(0)" id="close-sideSearch" class="close">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 352 512">
+                                    <path
+                                       d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                                 </svg>
+                              </a>
+                           </div>
+
+                           <div class="search-content">
+                              <div class="search-category">
+                                 <select name="product_cat" class="search-product-cat">
+                                    <option value="0" selected="selected">All Categories</option>
+                                    <option class="level-0" value="kids">Kids</option>
+                                    <option class="level-1" value="coat-kid">&nbsp;&nbsp;&nbsp;Coat</option>
+                                    <option class="level-1" value="hoodie">&nbsp;&nbsp;&nbsp;Hoodie</option>
+                                    <option class="level-1" value="knits">&nbsp;&nbsp;&nbsp;Knits</option>
+                                    <option class="level-1" value="outerwear">&nbsp;&nbsp;&nbsp;Outerwear</option>
+                                    <option class="level-1" value="shoes-kid">&nbsp;&nbsp;&nbsp;Shoes</option>
+                                    <option class="level-0" value="mens">Mens</option>
+                                    <option class="level-1" value="accessories-mens">&nbsp;&nbsp;&nbsp;Accessories
+                                    </option>
+                                    <option class="level-1" value="glasses">&nbsp;&nbsp;&nbsp;Glasses</option>
+                                    <option class="level-1" value="hats">&nbsp;&nbsp;&nbsp;Hats</option>
+                                    <option class="level-1" value="polo-shirts">&nbsp;&nbsp;&nbsp;Polo Shirts</option>
+                                    <option class="level-1" value="slippers">&nbsp;&nbsp;&nbsp;Slippers</option>
+                                    <option class="level-0" value="womens">Womens</option>
+                                    <option class="level-1" value="bag">&nbsp;&nbsp;&nbsp;Bag</option>
+                                    <option class="level-1" value="boots">&nbsp;&nbsp;&nbsp;Boots</option>
+                                    <option class="level-1" value="dresses">&nbsp;&nbsp;&nbsp;Dresses</option>
+                                    <option class="level-1" value="jeans">&nbsp;&nbsp;&nbsp;Jeans</option>
+                                    <option class="level-1" value="t-shirts">&nbsp;&nbsp;&nbsp;T-Shirts</option>
+                                    <option class="level-1" value="tops">&nbsp;&nbsp;&nbsp;Tops</option>
+                                 </select>
+                              </div>
+
+                              <div class="quick-links">
+                                 <p class="label">Quick Links</p>
+                                 <ul class="search-links">
+                                    <li><a href="#" class="underline-hover">Bag with Flap</a></li>
+                                    <li><a href="#" class="underline-hover">Travel Large Trifold Wallet</a></li>
+                                    <li><a href="#" class="underline-hover">Floral Dress Reserved</a></li>
+                                    <li><a href="#" class="underline-hover">Geometric print Scarf</a></li>
+                                    <li><a href="#" class="underline-hover">Polarised Sunglasses</a></li>
+                                    <li><a href="#" class="underline-hover">Travel Large Trifold Wallet</a> </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="login-link user">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 448 512">
+                           <path
+                              d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" />
+                        </svg>
+
+                        <div class="sidebar-login">
+                           <div class="sidebar-head">
+                              <h2>Search Products</h2>
+                              <a href="#" id="close-sideLogin" class="close">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 352 512">
+                                    <path
+                                       d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                                 </svg>
+                              </a>
+                           </div>
+
+                           <div class="login-content">
+                              <form action="#" method="post">
+                                 <input type="text" name="username" placeholder="Username" class="input-username" />
+                                 <input type="password" name="password" placeholder="Password" class="input-password" />
+                                 <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 576 512">
+                                       <path
+                                          d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z" />
+                                    </svg>
+                                 </span>
+
+                                 <div class="form-row">
+                                    <div class="checkbox">
+                                       <input type="checkbox" name="rememberme" class="input-checkbox">
+                                       <span class="checkbox-label">Remember me</span>
+                                    </div>
+                                    <span>Lost your password?</span>
+                                 </div>
+
+                                 <button type="submit" class="btn-submit">Sign in</button>
+                                 <button class="button-outline">Create An Account</button>
+
+                                 <button class="btn-facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 512 512">
+                                       <path
+                                          d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                                    </svg>
+                                    <span>Continue with Facebook</span>
+                                 </button>
+                                 <button class="btn-google">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 488 512">
+                                       <path
+                                          d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
+                                    </svg>
+                                    <span>Continue with Google</span>
+                                 </button>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="login-link heart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 512 512">
+                           <path
+                              d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                        </svg>
+                     </div>
+
+                     <div class="login-link cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 448 512">
+                           <path
+                              d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z" />
+                        </svg>
+
+                        <div class="sidebar-cart">
+                           <div class="sidebar-head">
+                              <h2>Your Cart (0)</h2>
+                              <a href="#" id="close-sideCart" class="close">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 352 512">
+                                    <path
+                                       d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                                 </svg>
+                              </a>
+                           </div>
+
+                           <div class="cart-content">
+                              <span>
+                                 Your Cart is Empty
+                                 <svg aria-hidden="true" role="img" focusable="false" width="20" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M16.4 16.4C16.4 16.4 14.75 14.2 12 14.2C9.25 14.2 7.6 16.4 7.6 16.4M8.7 8.7H8.711M15.3 8.7H15.311M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12Z"
+                                       stroke="#111111" stroke-width="1.6" stroke-linecap="round"
+                                       stroke-linejoin="round">
+                                    </path>
+                                 </svg>
+                              </span>
+
+                              <button class="btn-outline">Continue Shopping</button>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+
+                  <span class="nav-divider"></span>
+
+                  <div class="hamburger-menu">
+                     <div class="line"></div>
+                  </div>
+               </div>
+            </nav>
+
+            <div class="overlay"></div>
+
+            <div class="sidebar-navigation">
+               <div class="sidebar-head">
+                  <a href="index.html"><img src="assets/logo-dark.svg" alt="logo"></a>
+                  <a href="#" id="close-sideNavbar" class="close">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 352 512">
+                        <path
+                           d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                     </svg>
+                  </a>
+
+               </div>
+               <ul class="sidebar-nav">
+                  <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">Products
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 320 512">
+                           <path
+                              d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                        </svg>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Boots</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Bags</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Dresses</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Tunic</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">T-Shirts</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+               </ul>
+               <div class="social-icons">
+                  <a href="#">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 320 512">
+                        <path
+                           d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                     </svg>
+                  </a>
+                  <a href="#">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 496 512">
+                        <path
+                           d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+                     </svg>
+                  </a>
+                  <a href="#">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 448 512">
+                        <path
+                           d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                     </svg>
+                  </a>
+                  <a href="#">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 448 512">
+                        <path
+                           d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+   </header>
+
+   <main>
+
+      <section id="banner" aria-labelledby="Banner Sliders">
+         <div class="container">
+            <div class="swiper" id="swiper-banner">
+
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <img src="assets/banner-home-1.jpg" alt="banner">
+                     <div class="banner-content">
+                        <h1>Inspired By <span>Nature</span></h1>
+                        <a href="#" type="button" class="btn btn-white">Shop Collection
+                           <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 448 512">
+                              <path
+                                 d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z" />
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="assets/banner-home-2.jpg" alt="banner">
+                     <div class="banner-content">
+                        <h1>Inspired By <span>Nature</span></h1>
+                        <a href="#" type="button" class="btn btn-white">Shop Collection
+                           <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 448 512">
+                              <path
+                                 d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z" />
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="assets/banner-home-3.jpg" alt="banner">
+                     <div class="banner-content">
+                        <h1>Inspired By <span>Nature</span></h1>
+                        <a href="#" type="button" class="btn btn-white">Shop Collection
+                           <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 448 512">
+                              <path
+                                 d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z" />
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="swiper-pagination"></div>
+
+            </div>
+         </div>
+      </section>
+
+      <section id="infoStrip" aria-labelledby="Information Strip">
+         <div class="container">
+            <div class="discount-strip">
+               <p> *** Get 20% sale with coupone code CGBNJKI25 *** </p>
+            </div>
+         </div>
+      </section>
+
+      <section id="bestPicks" aria-labelledby="Best Picks of 2021">
+         <div class="container">
+
+            <div class="heading fade-in">
+               <span>NEW COLLECTION</span>
+               <h2>Best Picks 2021</h2>
+               <p>A conscious collection made entirely from food crop waste, recycled cotton, other more sustainable
+                  materials.
+               </p>
+            </div>
+
+            <div class="collections">
+               <div class="collection-bags fade-in">
+                  <img src="assets/best-pick-1.jpg" alt="Bags Collection">
+                  <div class="bags-content">
+                     <h3>Bags Collection</h3>
+                     <a href="#" class="btn btn-blank">
+                        Shop Now
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 448 512">
+                           <path
+                              d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z" />
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+               <div class="collection-shirts fade-in">
+                  <img src="assets/best-pick-2.jpg" alt="Bags Collection">
+                  <div class="shirts-content">
+                     <h3>Printed Men's <br /> Shirt</h3>
+                     <a href="#" class="btn-darkBlank">
+                        Shop Now
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 448 512">
+                           <path
+                              d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z" />
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="features" aria-labelledby="Features">
+         <div class="container">
+            <div class="features-wrapper">
+               <a href="#" class="features-item fade-in">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                     <path
+                        d="M72.5751 10.8037C72.2005 10.6222 71.7626 10.626 71.3911 10.8143L65.6451 13.7287L61.1482 6.00418C59.6089 3.11899 56.599 1.32285 53.3291 1.33802H31.1075C27.7897 1.34602 24.716 3.08316 22.9977 5.92152L18.8648 12.6381C18.4828 13.2587 18.6698 14.071 19.2848 14.4619L33.9498 23.7942C34.1635 23.9301 34.4113 24.0021 34.6644 24.0022C34.7751 24.0024 34.8852 23.9884 34.9924 23.9609C35.3482 23.8707 35.6511 23.6378 35.8296 23.317L41.429 13.2421L47.5617 24.8408L41.9783 28.1911C41.488 28.4851 41.2397 29.059 41.361 29.6176C41.4818 30.1761 41.9451 30.5953 42.5129 30.6602L62.3547 32.9159C62.4047 32.9213 62.4551 32.9239 62.5054 32.9239C63.0163 32.9239 63.4825 32.632 63.7053 32.172L73.1936 12.5848C73.5145 11.922 73.2377 11.1246 72.5751 10.8037ZM34.1858 20.7837L21.8231 12.9179L25.2761 7.30787C26.5095 5.26359 28.7201 4.01123 31.1075 4.00423H36.5202L39.8239 10.6368L34.1858 20.7837ZM61.7175 30.1601L46.7218 28.4549L50.0161 26.4778C50.6225 26.1132 50.8385 25.3384 50.508 24.7127L39.5585 4.00423H53.3291C55.6446 4.00089 57.7699 5.28542 58.8431 7.3372L63.9732 16.1536C64.3294 16.7628 65.0984 16.989 65.7277 16.6695L69.0687 14.9764L61.7175 30.1601Z"
+                        fill="#111111"></path>
+                     <path
+                        d="M78.8329 38.6725L74.5241 30.0654C74.1951 29.4066 73.3944 29.1395 72.7356 29.4685C72.7091 29.4816 72.6831 29.4958 72.6576 29.5108L56.6593 38.8431C56.0324 39.2087 55.8133 40.0086 56.1661 40.6429L61.7281 50.6658H49.3295V45.3331C49.3298 44.5968 48.733 43.9997 47.9968 43.9994C47.621 43.9992 47.2625 44.1577 47.0097 44.4358L33.6778 59.1009C33.2434 59.579 33.2142 60.2998 33.6085 60.8114L46.9404 78.1428C47.3899 78.7259 48.2271 78.8343 48.8102 78.3848C49.1375 78.1325 49.3293 77.7429 49.3295 77.3296V73.33H58.6618C61.9491 73.411 64.9906 71.5957 66.4796 68.6639L75.8119 52.6736L78.585 48.1941C80.3786 45.2972 80.4734 41.6588 78.8329 38.6725ZM64.1612 67.352C63.134 69.4368 60.985 70.7308 58.6618 70.6637H47.9963C47.26 70.6637 46.6631 71.2606 46.6631 71.9968V73.41L36.3975 60.0701L46.6631 48.7807V51.999C46.6631 52.7353 47.26 53.3322 47.9963 53.3322H72.339L64.1612 67.352ZM76.3119 46.7969L73.9121 50.6632H64.7785L59.1284 40.4949L72.7709 32.5345L76.4705 39.9203C77.6647 42.0726 77.6041 44.702 76.3119 46.7969Z"
+                        fill="#111111"></path>
+                     <path
+                        d="M31.8754 40.7749L23.8763 23.4434C23.6463 22.9425 23.1319 22.6345 22.5818 22.6689L1.25073 24.002C0.515813 24.0477 -0.0429595 24.6803 0.00270223 25.4152C0.0295327 25.8465 0.263507 26.2381 0.630801 26.4658L0.632134 26.4684L7.22342 30.556L2.8239 39.3657C1.22924 42.2629 1.2384 45.777 2.84789 48.666L10.2671 61.478L14.324 68.5052C16.0663 71.4649 19.2315 73.2957 22.6658 73.33H27.9985C28.7348 73.33 29.3317 72.7331 29.3317 71.9968V53.3322C29.3317 52.596 28.7348 51.999 27.9985 51.999H18.0382L24.6882 40.4603L30.1863 42.5774C30.8735 42.8415 31.6449 42.4985 31.9091 41.8113C32.0382 41.4755 32.0261 41.1017 31.8754 40.7749ZM26.6653 54.6654V70.6637H22.6658C20.1814 70.6397 17.8911 69.3156 16.6304 67.1747L12.9708 60.8341L16.7464 54.6654H26.6653ZM24.5815 37.5619C23.9689 37.3266 23.2762 37.5719 22.9484 38.1405L11.4163 58.149L5.15564 47.3329C4.00477 45.2301 4.02193 42.682 5.20097 40.5949L10.1591 30.6573C10.4696 30.0397 10.2566 29.2873 9.66849 28.9242L5.59026 26.4018L21.8378 25.3899L28.0772 38.9084L24.5815 37.5619Z"
+                        fill="#111111"></path>
+                  </svg>
+                  <p>Made from recycled<br> discarded textiles</p>
+               </a>
+
+               <a href="#" class="features-item fade-in">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                     <path
+                        d="M54.1169 40.9444L41.176 16.8275C40.7691 16.1788 39.9134 15.983 39.2649 16.3897C39.088 16.5007 38.9383 16.6504 38.8272 16.8275L25.8863 40.9444C23.2609 45.7827 23.3984 51.6505 26.2475 56.3607C30.8441 63.9569 40.7282 66.3884 48.3244 61.7919C50.547 60.4469 52.4106 58.5833 53.7556 56.3607C56.6046 51.6506 56.7422 45.7829 54.1169 40.9444ZM51.4695 54.9903C49.0639 59.0255 44.6993 61.4831 40.0016 61.4475C35.3052 61.4816 30.9426 59.0244 28.5377 54.9903C26.1757 51.0833 26.0621 46.2171 28.2391 42.2041L40.0016 20.2773L51.7681 42.2041C53.9451 46.2171 53.8314 51.0834 51.4695 54.9903Z"
+                        fill="#111111"></path>
+                     <path
+                        d="M79.3453 32.9673C78.7276 29.5782 77.6742 26.2835 76.2116 23.1648C75.9775 22.6734 75.4701 22.3718 74.9266 22.401C74.382 22.4331 73.9121 22.7939 73.7402 23.3114L72.2805 27.7104L68.4668 26.8039C67.7508 26.6324 67.0314 27.0737 66.8598 27.7897C66.7935 28.0664 66.8175 28.3574 66.9285 28.6195C68.4784 32.2548 69.2717 36.1675 69.2599 40.1194C69.1539 53.8276 59.6141 65.6544 46.2388 68.6592C45.9372 68.7262 45.6677 68.8953 45.4763 69.1378L41.6732 73.9779C41.2178 74.5563 41.3175 75.3944 41.896 75.8498C41.8963 75.8502 41.8968 75.8505 41.8971 75.8508L46.1361 79.1833C46.3711 79.3681 46.6612 79.4686 46.9599 79.4686C47.0406 79.4683 47.1209 79.4598 47.1999 79.4433C68.9105 75.4859 83.3025 54.6779 79.3453 32.9673ZM52.5966 75.2411C50.8712 75.859 49.1026 76.3487 47.3052 76.7066V76.7079L44.5925 74.5751L47.2812 71.1546C61.6492 67.6978 71.8143 54.897 71.9259 40.1194C71.9368 36.672 71.3851 33.2462 70.293 29.9765L72.8524 30.5843C73.5247 30.744 74.2077 30.363 74.4253 29.7072L75.1425 27.5451C82.0875 46.9417 71.9934 68.296 52.5966 75.2411Z"
+                        fill="#111111"></path>
+                     <path
+                        d="M70.3396 14.0641C62.7623 5.24142 51.7194 0.154309 40.0896 0.128815H40.0016C27.1853 0.156641 15.1535 6.30534 7.62267 16.6755C7.19044 17.2715 7.32341 18.105 7.91943 18.5372C8.14721 18.7024 8.42115 18.7912 8.70241 18.791H12.8454L13.3546 22.4888C13.4103 22.898 13.6526 23.2584 14.0105 23.4646L14.1944 23.5699C14.7913 23.9125 15.5508 23.7443 15.9473 23.182C21.443 15.3792 30.3871 10.7326 39.9309 10.7223H40.0016C48.5445 10.7431 56.6529 14.4917 62.2029 20.9865C62.4562 21.2826 62.8264 21.453 63.216 21.453H69.3279C70.064 21.453 70.6609 20.8562 70.6609 20.12V14.9333C70.6604 14.6147 70.5466 14.3066 70.3396 14.0641ZM67.9949 18.791H63.8172C57.7707 11.983 49.1071 8.07791 40.0016 8.05625H39.9296C30.5718 8.06758 21.6866 12.1689 15.6074 19.2829L15.3315 17.2834C15.2438 16.6197 14.6773 16.124 14.0078 16.125H11.4338C18.5304 7.69367 28.9812 2.81717 40.0016 2.79484H40.0829C50.7667 2.81817 60.9282 7.4189 67.9949 15.4318V18.791Z"
+                        fill="#111111"></path>
+                     <path
+                        d="M37.3915 69.2603C21.2694 67.8731 9.32426 53.6791 10.7113 37.5568C10.8974 35.3934 11.3234 33.2574 11.9816 31.188C12.0759 30.8939 12.0646 30.5762 11.9496 30.2896L9.81681 24.9575C9.54404 24.2737 8.76856 23.9406 8.08472 24.2134C8.08439 24.2135 8.08422 24.2135 8.08389 24.2137L2.97178 26.2626C2.61304 26.4064 2.33377 26.6978 2.2053 27.0624C-5.00764 47.921 6.05455 70.6777 26.9132 77.8905C29.7804 78.8819 32.751 79.5438 35.7679 79.863C35.8122 79.868 35.8567 79.8707 35.9012 79.871C36.6374 79.8712 37.2344 79.2745 37.2344 78.5382C37.2344 78.2764 37.1574 78.0205 37.013 77.8022L34.5709 74.1111L38.0127 71.8343C38.3856 71.5874 38.6099 71.1698 38.6099 70.7226V70.5893C38.6102 69.8973 38.081 69.3197 37.3915 69.2603ZM31.6113 74.4722C31.6113 74.4723 31.6114 74.4723 31.6114 74.4725V74.4658L33.1551 76.7999C12.9041 73.0342 -0.460062 53.5648 3.30554 33.3137C3.60796 31.6871 4.01837 30.0823 4.53391 28.51L7.83578 27.189L9.3021 30.8455C8.40581 33.8099 7.94642 36.889 7.93843 39.9859C7.98841 55.2754 18.7833 68.4216 33.7709 71.4451L31.9873 72.6248C31.3735 73.031 31.205 73.8581 31.6113 74.4722Z"
+                        fill="#111111"></path>
+                  </svg>
+                  <p>Produced without water<br> &amp; chemicals</p>
+               </a>
+
+               <a href="#" class="features-item fade-in">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                     <g clip-path="url(#clip0)">
+                        <path
+                           d="M79.5108 38.3007L65.3329 26.7001V9.99809C65.3329 9.26172 64.7358 8.66469 63.9995 8.66469H53.3323C52.596 8.66469 51.9989 9.26172 51.9989 9.99809V16.557L40.8318 7.62332C40.3454 7.23547 39.6554 7.23547 39.169 7.62332L0.500683 38.2913C-0.0745083 38.7512 -0.167846 39.5904 0.292008 40.1654C0.544352 40.4809 0.926035 40.6651 1.33005 40.6661H11.9972V71.3341C11.9972 72.0705 12.5942 72.6675 13.3306 72.6675H66.6662C67.4026 72.6675 67.9996 72.0705 67.9996 71.3341V40.6661H78.6668C79.4031 40.6659 80 40.0689 80 39.3325C79.9998 38.9325 79.8203 38.5538 79.5108 38.3007ZM38.665 63.2564L34.8702 60.411C29.7471 56.5471 26.716 50.5175 26.6712 44.1009L38.665 57.1855V63.2564ZM38.665 53.2386L27.0018 40.5141C27.5412 37.4275 28.7769 34.5045 30.6153 31.967L38.665 41.1661V53.2386ZM38.665 37.1179L32.3394 29.8896C33.1178 29.0528 33.9653 28.2829 34.8729 27.5882L38.665 24.7427V37.1179ZM66.6662 37.9993C65.9299 37.9993 65.3329 38.5963 65.3329 39.3327V70.0007H41.3318V66.7446L46.932 62.5431C57.1733 54.8631 59.2496 40.3349 51.5696 30.0936C50.2514 28.3357 48.69 26.7743 46.932 25.4561L40.9011 20.9319C40.4271 20.5764 39.7751 20.5764 39.301 20.9319L33.2701 25.4561C23.0288 33.1361 20.9526 47.6642 28.6326 57.9055C29.9508 59.6634 31.5122 61.2248 33.2701 62.5431L38.665 66.5899V70.0007H14.664V39.3327C14.664 38.5963 14.0669 37.9993 13.3306 37.9993H5.15689L39.9984 10.3688L52.503 20.3692C53.0797 20.8272 53.9184 20.7312 54.3764 20.1545C54.5624 19.9205 54.6642 19.6307 54.6657 19.3318V11.3315H62.6661V27.3322C62.6661 27.7322 62.8457 28.111 63.1554 28.3642L74.9333 37.9993H66.6662ZM53.091 39.9007C53.3785 41.2483 53.5282 42.6217 53.5377 43.9996C53.5227 50.453 50.4857 56.5268 45.332 60.411L41.3318 63.4111V49.3078L53.091 39.9007ZM41.3318 45.8917V24.5881L45.332 27.5882C48.5411 30.0073 50.9722 33.3126 52.3256 37.0966L41.3318 45.8917Z"
+                           fill="#111111"></path>
+                     </g>
+                     <defs>
+                        <clipPath id="clip0">
+                           <rect width="80" height="80" fill="white"></rect>
+                        </clipPath>
+                     </defs>
+                  </svg>
+                  <p>Locally produced<br> in a closed chain</p>
+               </a>
+            </div>
+         </div>
+      </section>
+
+      <section id="topSellers" aria-labelledby="Top Sellers">
+         <div class="container">
+            <div class="heading fade-in">
+               <span>Best of the Best</span>
+               <h2>Top Sellers</h2>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore sunt voluptates laborum nulla
+                  reiciendis obcaecati facere.
+               </p>
+            </div>
+
+            <div class="swiper" id="swiper-seller">
+               <div class="swiper-wrapper">
+
+                  <div class="swiper-slide fade-in">
+                     <figure>
+                        <img src="assets/seller-1.jpg" alt="Geometric print Scarf" class="hide" />
+                        <img src="assets/seller-11.jpg" alt="Geometric print Scarf">
+                        <span class="badge badge-dark">SALE</span>
+                        <div class="cart-items">
+                           <a href="#" class="bag">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 448 512">
+                                 <path
+                                    d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="eye">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 576 512">
+                                 <path
+                                    d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="heart">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 512 512">
+                                 <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                              </svg>
+                           </a>
+                        </div>
+                     </figure>
+                     <div class="card-content">
+                        <span class="category">Boots</span>
+                        <h3>Clarks Women’s Step Cali</h3>
+                        <span class="card-price">$45.00</span>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide fade-in">
+                     <figure>
+                        <img src="assets/seller-2.jpg" alt="Geometric print Scarf" class="hide" />
+                        <img src="assets/seller-22.jpg" alt="Geometric print Scarf">
+                        <span class="badge badge-red">HOT</span>
+                        <div class="cart-items">
+                           <a href="#" class="bag">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 448 512">
+                                 <path
+                                    d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="eye">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 576 512">
+                                 <path
+                                    d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="heart">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 512 512">
+                                 <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                              </svg>
+                           </a>
+                        </div>
+                     </figure>
+                     <div class="card-content">
+                        <span class="category">Bags</span>
+                        <h3>Geometric print Scarf</h3>
+                        <div class="d-flex">
+                           <span class="card-cross">$50.00</span>
+                           <span class="card-red">$23.00</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide fade-in">
+                     <figure>
+                        <img src="assets/seller-3.jpg" alt="Cross Body Mini Bag" class="hide" />
+                        <img src="assets/seller-33.jpg" alt="Cross Body Mini Bag">
+                        <span class="badge badge-dark">SALE</span>
+                        <div class="cart-items">
+                           <a href="#" class="bag">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 448 512">
+                                 <path
+                                    d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="eye">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 576 512">
+                                 <path
+                                    d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="heart">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 512 512">
+                                 <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                              </svg>
+                           </a>
+                        </div>
+                     </figure>
+                     <div class="card-content">
+                        <span class="category">Bags</span>
+                        <h3>Cross Body Mini Bag</h3>
+                        <span class="card-price">$40.00</span>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide fade-in">
+                     <figure>
+                        <img src="assets/seller-4.jpg" alt="Yellow Reserved Hoodie" class="hide" />
+                        <img src="assets/seller-44.jpg" alt="Yellow Reserved Hoodie">
+                        <span class="badge badge-dark">SALE</span>
+                        <div class="cart-items">
+                           <a href="#" class="bag">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 448 512">
+                                 <path
+                                    d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="eye">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 576 512">
+                                 <path
+                                    d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="heart">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 512 512">
+                                 <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                              </svg>
+                           </a>
+                        </div>
+                     </figure>
+                     <div class="card-content">
+                        <span class="category">Mens</span>
+                        <h3>Yellow Reserved Hoodie</h3>
+                        <div class="d-flex">
+                           <span class="card-cross">$200.00</span>
+                           <span class="card-red">$123.00</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide fade-in">
+                     <figure>
+                        <img src="assets/seller-5.jpg" alt="Tarot Garden Dress" class="hide" />
+                        <img src="assets/seller-55.jpg" alt="Tarot Garden Dress">
+                        <div class="cart-items">
+                           <a href="#" class="bag">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 448 512">
+                                 <path
+                                    d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="eye">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 576 512">
+                                 <path
+                                    d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="heart">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 512 512">
+                                 <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                              </svg>
+                           </a>
+                        </div>
+                     </figure>
+                     <div class="card-content">
+                        <span class="category">Dresses</span>
+                        <h3>Tarot Garden Dress</h3>
+                        <span class="card-price">$129.00</span>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="text-center fade-in">
+               <a href="#" type="button" class="btn btn-dark">Shop All Products</a>
+            </div>
+         </div>
+      </section>
+
+      <section id="collection" aria-labelledby="Collections">
+         <div class="container">
+            <div class="collection-wrapper">
+               <a href="#" class="collection-card fade-in">
+                  <figure><img src="assets/collection-1.jpg" alt="Women Shirt Collection"></figure>
+                  <h3>Women Shirt <br /> Collection</h3>
+               </a>
+               <a href="#" class="collection-card fade-in">
+                  <figure><img src="assets/collection-2.jpg" alt="Mens Coats Collection"></figure>
+                  <h3>Mens Coats <br /> Collection</h3>
+               </a>
+            </div>
+         </div>
+      </section>
+
+      <section id="newArrivals" aria-labelledby="New Arrivals">
+         <div class="container">
+            <div class="heading fade-in">
+               <span>Newest of the New</span>
+               <h2>New Arrivals</h2>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore sunt voluptates laborum nulla
+                  reiciendis obcaecati facere.
+               </p>
+            </div>
+
+            <div class="swiper" id="swiper-arrival">
+               <div class="swiper-wrapper">
+
+                  <div class="swiper-slide fade-in">
+                     <figure>
+                        <img src="assets/arrival-01.jpg" alt="Hiking Boots" class="hide" />
+                        <img src="assets/arrival-11.jpg" alt="Hiking Boots" />
+                        <span class="badge badge-dark">SALE</span>
+                        <div class="cart-items">
+                           <a href="#" class="bag">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 448 512">
+                                 <path
+                                    d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="eye">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 576 512">
+                                 <path
+                                    d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="heart">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 512 512">
+                                 <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                              </svg>
+                           </a>
+                        </div>
+                     </figure>
+                     <div class="card-content">
+                        <span>Kids</span>
+                        <h3>Hiking Boots</h3>
+                        <div class="d-flex">
+                           <span class="card-cross">$77.00</span>
+                           <span class="card-red">$44.00</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide fade-in">
+                     <figure>
+                        <img src="assets/seller-3.jpg" alt="Cross Body Mini Bag" class="hide" />
+                        <img src="assets/seller-33.jpg" alt="Cross Body Mini Bag" />
+                        <span class="badge badge-dark">SALE</span>
+                        <div class="cart-items">
+                           <a href="#" class="bag">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 448 512">
+                                 <path
+                                    d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="eye">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 576 512">
+                                 <path
+                                    d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="heart">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 512 512">
+                                 <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                              </svg>
+                           </a>
+                        </div>
+                     </figure>
+                     <div class="card-content">
+                        <span>Bags</span>
+                        <h3>Cross Body Mini Bag</h3>
+                        <span class="card-price">$40.00</span>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide fade-in">
+                     <figure>
+                        <img src="assets/arrival-02.jpg" alt="Travel Large Trifold Wallet" class="hide" />
+                        <img src="assets/arrival-22.jpg" alt="Travel Large Trifold Wallet" />
+                        <div class="cart-items">
+                           <a href="#" class="bag">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 448 512">
+                                 <path
+                                    d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="eye">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 576 512">
+                                 <path
+                                    d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="heart">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 512 512">
+                                 <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                              </svg>
+                           </a>
+                        </div>
+                     </figure>
+                     <div class="card-content">
+                        <span>Kids</span>
+                        <h3>Travel Trifold Wallet</h3>
+                        <div class="d-flex">
+                           <span class="card-cross">$157.00</span>
+                           <span class="card-red">$129.00</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide fade-in">
+                     <figure>
+                        <img src="assets/arrival-03.jpg" alt="Wide Cotton Tunic" class="hide" />
+                        <img src="assets/arrival-33.jpg" alt="Wide Cotton Tunic" />
+                        <span class="badge badge-red">HOT</span>
+                        <div class="cart-items">
+                           <a href="#" class="bag">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 448 512">
+                                 <path
+                                    d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="eye">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 576 512">
+                                 <path
+                                    d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="heart">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 512 512">
+                                 <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                              </svg>
+                           </a>
+                        </div>
+                     </figure>
+                     <div class="card-content">
+                        <span>T-Shirt</span>
+                        <h3>Wide Cotton Tunic</h3>
+                        <span class="card-price">$250.00</span>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide fade-in">
+                     <figure>
+                        <img src="assets/arrival-04.jpg" alt="Gina Dress Sandals" class="hide" />
+                        <img src="assets/arrival-44.jpg" alt="Gina Dress Sandals" />
+                        <div class="cart-items">
+                           <a href="#" class="bag">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 448 512">
+                                 <path
+                                    d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="eye">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 576 512">
+                                 <path
+                                    d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z" />
+                              </svg>
+                           </a>
+                           <a href="#" class="heart">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 512 512">
+                                 <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                              </svg>
+                           </a>
+                        </div>
+                     </figure>
+                     <div class="card-content">
+                        <span>Boots</span>
+                        <h3>Gina Dress Sandals</h3>
+                        <span class="card-price">$79.00</span>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="text-center fade-in">
+               <a href="#" type="button" class="btn btn-dark">Shop All Products</a>
+            </div>
+
+         </div>
+      </section>
+
+      <section id="blog" aria-labelledby="Blog">
+         <div class="container">
+
+            <div class="heading fade-in">
+               <span>Read the Latest</span>
+               <h2>Blogs</h2>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore sunt voluptates laborum nulla
+                  reiciendis obcaecati facere.
+               </p>
+            </div>
+
+            <div class="swiper" id="swiper-blog">
+               <div class="swiper-wrapper">
+
+                  <div class="swiper-slide fade-in">
+                     <figure>
+                        <img src="assets/blog-1.jpg" alt="blog">
+                        <span class="badge badge-date">Sep 29</span>
+                     </figure>
+                     <div class="blog-content">
+                        <h3>So isn’t land signs greater void face</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt vitae error placeat
+                           molestiae...
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide fade-in">
+                     <figure>
+                        <img src="assets/blog-2.jpg" alt="blog">
+                        <span class="badge badge-date">Sep 29</span>
+                     </figure>
+                     <div class="blog-content">
+                        <h3>Sea good every which said first divide</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt vitae error placeat
+                           molestiae...
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide fade-in">
+                     <figure>
+                        <img src="assets/blog-3.jpg" alt="blog">
+                        <span class="badge badge-date">Sep 29</span>
+                     </figure>
+                     <div class="blog-content">
+                        <h3>The morning let you created every day.</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt vitae error placeat
+                           molestiae...
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide fade-in">
+                     <figure>
+                        <img src="assets/blog-4.jpg" alt="blog">
+                        <span class="badge badge-date">Sep 29</span>
+                     </figure>
+                     <div class="blog-content">
+                        <h3>Third darkness and second dry greater.</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt vitae error placeat
+                           molestiae
+                           dolore ipsam...
+                        </p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section id="brands" aria-labelledby="Brands">
+         <div class="container">
+            <div class="brands-wrapper fade-in">
+               <a href="#"><img src="assets/brand-1.webp" alt="Mang"></a>
+               <a href="#"><img src="assets/brand-2.webp" alt="Zar"></a>
+               <a href="#"><img src="assets/brand-3.webp" alt="Reebo"></a>
+               <a href="#"><img src="assets/brand-4.webp" alt="aso"></a>
+               <a href="#"><img src="assets/brand-5.webp" alt="stradivar"></a>
+               <a href="#"><img src="assets/brand-6.webp" alt="adida"></a>
+               <a href="#"><img src="assets/brand-7.webp" alt="bersh"></a>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <footer>
+      <div class="container">
+         <div class="ftr-email">
+            <h2>Want style Ideas and Treats?</h2>
+            <form action="#" method="post" class="email">
+               <input type="email" name="email" placeholder="Enter Email*" required />
+               <input type="submit" class="btn-subscribe" value="Subscribe" />
+            </form>
+         </div>
+
+         <div class="footer-wrapper">
+            <div class="ftr-cont">
+               <a href="index.html" class="ftr-logo"><img src="assets/logo-light.svg" alt="logo" /> </a>
+               <div class="social-icons">
+                  <a href="#">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 320 512">
+                        <path
+                           d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                     </svg>
+                  </a>
+                  <a href="#">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 496 512">
+                        <path
+                           d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+                     </svg>
+                  </a>
+                  <a href="#">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 448 512">
+                        <path
+                           d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                     </svg>
+                  </a>
+                  <a href="#">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
+                        <path
+                           d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+
+            <ul class="ftr-list">
+               <a href="#" class="ftr-head">SUPPORT</a>
+               <a href="#" class="ftr-items">Contact Us</a>
+               <a href="#" class="ftr-items">FAQs</a>
+               <a href="#" class="ftr-items">Size Guide</a>
+               <a href="#" class="ftr-items">Shipping & Returns</a>
+            </ul>
+            <div class="ftr-list">
+               <a href="#" class="ftr-head">SHOP</a>
+               <a href="#" class="ftr-items">Men's Shopping</a>
+               <a href="#" class="ftr-items">Women's Shopping</a>
+               <a href="#" class="ftr-items">Kid's Shopping</a>
+               <a href="#" class="ftr-items">Discount</a>
+            </div>
+            <div class="ftr-list">
+               <a href="#" class="ftr-head">COMPANY</a>
+               <a href="#" class="ftr-items">Our Story</a>
+               <a href="#" class="ftr-items">Career</a>
+               <a href="#" class="ftr-items">Terms & Conditions</a>
+               <a href="#" class="ftr-items">Privacy & Cookie Policy</a>
+            </div>
+            <div class="ftr-list">
+               <a href="#" class="ftr-head">CONTACT</a>
+               <a href="#" class="ftr-items">1-888-923-8044</a>
+               <a href="#" class="ftr-items">1-888-923-8055</a>
+               <a href="#" class="ftr-items">help@allbirds.com</a>
+               <a href="#" class="ftr-items">support@allbirds.com</a>
+            </div>
+         </div>
+      </div>
+
+      <div class="footbar">
+         <div class="container">
+            <div class="footbar-wrapper">
+               <p>© 2021 All rights reserved.</p>
+               <img src="assets/icon-payment.png" alt="payments">
+            </div>
+         </div>
+      </div>
+
+      <div class="scrollTop">
+         <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 320 512">
+            <path
+               d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z" />
+         </svg>
+      </div>
+   </footer>
+
+</body>
+
+</html>

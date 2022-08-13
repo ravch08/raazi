@@ -1,0 +1,35 @@
+@use '../abstracts/helper'as *;
+
+.features-wrapper {
+   @extend .flexRow-around;
+
+   .features-item {
+      text-align: center;
+
+      svg {
+         margin-bottom: 2rem;
+         transition: transform 0.3s ease-in-out;
+      }
+
+      p {
+         color: $color-Dark-800;
+      }
+
+      &:hover {
+         svg {
+            transform: translateY(-0.3rem);
+         }
+      }
+   }
+}
+
+// ----------------------------------- MEDIA QUERIES --------------------------------------
+
+
+@media screen and (max-width: 420px) {
+
+   .features-wrapper {
+      gap: 3rem;
+      flex-direction: column;
+   }
+}

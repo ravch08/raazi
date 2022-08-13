@@ -1,0 +1,144 @@
+@use "../abstracts/helper"as *;
+
+footer {
+   padding-top: 6rem;
+   background-image: url('../../assets/footer-bg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   .ftr-cont {
+      @extend .flexColumn-start;
+   }
+
+   .ftr-logo {
+      padding-bottom: 2.6rem;
+   }
+
+   .ftr-email {
+      text-align: center;
+      color: $color-light-100;
+   }
+
+   h2 {
+      font-weight: 400;
+      font-size: $fs-h3;
+      margin-bottom: 3rem;
+   }
+
+   input[type=email] {
+      border: none;
+      width: 40%;
+      padding: 1.5rem;
+      caret-color: white;
+      background-color: $color-Dark-100;
+
+      &::placeholder {
+         color: $color-light-100;
+      }
+
+      &:focus-visible {
+         border: none;
+         outline: none;
+      }
+   }
+
+   input[type=submit] {
+      border: none;
+      cursor: pointer;
+      border-radius: 0;
+      padding: 1.65rem 3rem;
+      color: $color-Dark-800;
+      background-color: $color-light-800;
+   }
+}
+
+.footer-wrapper {
+   gap: 3rem;
+   margin: 8rem 0;
+   flex-wrap: wrap;
+   @extend .flexRow-start;
+}
+
+.ftr-list {
+   @extend .flexColumn-start;
+
+   .ftr-head {
+      font-weight: 800;
+      padding-bottom: 1.5rem;
+      color: $color-light-100;
+   }
+
+   .ftr-items {
+      padding: 0.6rem 0;
+      color: $color-light-100;
+      transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+
+      &:hover {
+         color: white;
+         transform: translateX(0.3rem);
+      }
+   }
+}
+
+.footbar {
+   padding: 2.5rem 0;
+   border-top: 0.1rem solid rgba(255, 255, 255, 0.075);
+
+   .footbar-wrapper {
+      @extend .flexRow-between;
+   }
+
+   p {
+      color: $color-light-100;
+   }
+}
+
+.scrollTop {
+   position: fixed;
+   bottom: 3%;
+   right: 3%;
+   z-index: 99;
+   width: 5rem;
+   height: 5rem;
+   cursor: pointer;
+   border-radius: 50%;
+   // transform: scale(1);
+   @extend .flexRow-center;
+   box-shadow: $box-shadow-md;
+   background-color: $color-Dark-800;
+   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+   svg {
+      fill: $color-light-100;
+   }
+
+   &:hover {
+      background-color: $color-primary;
+   }
+
+   &.shrink {
+      transform: scale(0);
+   }
+}
+
+
+// ----------------------------------- MEDIA QUERIES --------------------------------------
+
+
+@media screen and (max-width: 420px) {
+
+   .footer-wrapper {
+      gap: 3rem;
+      flex-direction: column;
+   }
+}
+
+@media screen and (max-width: 768px) {
+
+   .footbar {
+      .footbar-wrapper {
+         gap: 3rem;
+         flex-direction: column;
+      }
+   }
+}
