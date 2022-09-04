@@ -16,7 +16,7 @@ header {
       &.sticky {
          top: 0;
          padding: 0;
-         background-color: white;
+         background-color: hsl(0, 0%, 100%);
          box-shadow: $box-shadow-md;
       }
    }
@@ -292,8 +292,8 @@ nav {
 .sidebar-navigation {
    top: 0;
    z-index: 98;
-   width: 35rem;
-   right: -37rem;
+   width: 40rem;
+   right: -41rem;
    height: 100vh;
    position: fixed;
    background-color: white;
@@ -302,6 +302,149 @@ nav {
 
    &.open {
       right: 0;
+   }
+}
+
+.sidebar-head {
+   padding: 2.8rem;
+   @extend .flexRow-between;
+   border-bottom: 0.1rem solid hsla(0, 0%, 0%, 0.178);
+
+   h2 {
+      font-size: 2.6rem;
+   }
+
+   .close {
+      padding: 1rem 0 1rem 1rem;
+   }
+
+   svg {
+      transform: translateY(0.3rem);
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+         transform: translateY(0.3rem) rotate(180deg);
+      }
+   }
+}
+
+.sidebar-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   width: 100%;
+   height: 100%;
+}
+
+.cart-content {
+   width: 100%;
+   height: 100%;
+   padding: 3rem;
+   @extend .flexColumn-center;
+
+   span {
+      margin-bottom: 2rem;
+      font-size: $fs-h4;
+      text-align: center;
+   }
+
+   svg {
+      transform: translateY(0.3rem);
+   }
+}
+
+.login-content {
+   width: 100%;
+   height: 100%;
+   padding: 0 3rem;
+   margin-top: 8rem;
+   @extend .flexRow-start;
+
+   .form-row {
+      margin-bottom: 4rem;
+      @extend .flexRow-between;
+   }
+
+   .checkbox {
+      @extend .flexRow-start;
+   }
+
+   .input-checkbox {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.8rem;
+   }
+
+   .input-eye {
+      position: absolute;
+      top: 42%;
+      right: 5%;
+   }
+
+   .input-username,
+   .input-password {
+      width: 100%;
+      padding: 1.5rem;
+      margin: 1rem 0;
+   }
+
+   form {
+      position: relative;
+   }
+}
+
+.search-content {
+
+   .search-product-cat {
+      width: 100%;
+      padding: 1.5rem;
+      border: 1px solid hsl(0, 0%, 0%);
+      border-radius: 0;
+      background-color: transparent;
+   }
+
+   .search-category {
+      padding: 4rem 3rem;
+      border-bottom: 0.1rem solid hsla(0, 0%, 0%, 0.178);
+   }
+
+   .quick-links {
+      padding: 4rem 3rem;
+
+      .label {
+         font-weight: 700;
+         font-size: $fs-h4;
+         padding-bottom: 1.2rem;
+      }
+
+      li {
+         display: flex;
+         width: fit-content;
+         position: relative;
+      }
+
+      .underline-hover {
+         padding: 0.8rem 0;
+         color: $color-Dark-400;
+
+         &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 0;
+            opacity: 0;
+            height: 1px;
+            background-color: $color-Dark-800;
+            transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out;
+         }
+
+         &:hover::after {
+            opacity: 1;
+            width: 100%;
+         }
+      }
    }
 }
 
@@ -343,29 +486,6 @@ nav {
    }
 }
 
-.sidebar-head {
-   padding: 2.8rem;
-   @extend .flexRow-between;
-   border-bottom: 0.1rem solid hsla(0, 0%, 0%, 0.178);
-
-   h2 {
-      font-size: 2.6rem;
-   }
-
-   .close {
-      padding: 1rem 0 1rem 1rem;
-   }
-
-   svg {
-      transform: translateY(0.3rem);
-      transition: transform 0.3s ease-in-out;
-
-      &:hover {
-         transform: translateY(0.3rem) rotate(180deg);
-      }
-   }
-}
-
 
 // ----------------------------------- MEDIA QUERIES --------------------------------------
 
@@ -399,6 +519,16 @@ nav {
 
    .hamburger-menu {
       display: flex;
+   }
+}
+
+@media screen and (max-width: 628px) {
+
+   .sidebar-cart,
+   .sidebar-login,
+   .sidebar-search,
+   .sidebar-navigation {
+      width: 100%;
    }
 }
 

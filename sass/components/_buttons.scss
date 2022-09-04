@@ -69,3 +69,59 @@
       }
    }
 }
+
+button {
+   width: 100%;
+   border: none;
+   margin: 1rem 0;
+   cursor: pointer;
+}
+
+.btn-submit {
+   color: white;
+   border-radius: 0;
+   padding: 2rem 3rem;
+   background-color: black;
+}
+
+.btn-outline {
+   color: black;
+   padding: 2rem 3rem;
+   border: 0.1rem solid black;
+   background-color: transparent;
+}
+
+.btn-facebook {
+   color: white;
+   margin-top: 3rem;
+   padding: 1.6rem 3rem;
+   @extend .flexRow-center;
+   background-color: hsl(214, 89%, 52%);
+   transition: background-color 0.3s ease-in-out;
+
+   svg {
+      fill: white;
+      margin-right: 1rem;
+   }
+
+   &:hover {
+      background-color: darken(hsl(214, 89%, 52%), 10%);
+   }
+}
+
+.btn-google {
+   color: white;
+   padding: 1.6rem 3rem;
+   @extend .flexRow-center;
+   background-color: hsl(5, 69%, 56%);
+   transition: background-color 0.3s ease-in-out;
+
+   svg {
+      fill: white;
+      margin-right: 1rem;
+   }
+
+   &:hover {
+      background-color: darken(hsl(5, 69%, 56%), 10%);
+   }
+}
